@@ -1,0 +1,11 @@
+<h1>Here They Are!!!!!!</h1>
+
+<div id="blogs" ng-init="vm.init()">
+    <!--<div ng-repeat="blog in vm.blogs"></div>-->
+    <ul>
+        <li ng-repeat="post in vm.blogposts">{{post.title}}</li>
+    </ul>
+    <form method="link" action="http://localhost:3000/#/createPost" >
+    <input type="submit" value="Create Blog">
+    </form>
+</div>
