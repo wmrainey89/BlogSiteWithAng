@@ -1,0 +1,21 @@
+
+
+    <h1>Here They Are!!!!</h1>
+
+    </br>
+
+    <button ng-click="goToCompose()">New Post? Click Me!!!</button>
+
+    </br>
+
+    <div>
+        <ul ng-repeat='blog in blogPosts | orderBy : "-createdAt"'>
+            <li>{{blog.title}}</li>
+            <li>{{blog.author}}</li>
+            <li>{{blog.createdAt | date : "medium"}}</li>
+            <a href="#/singlePost/{{blog.id}}">Read More!!!</a>
+        </ul>
+    </div>
+
+
+
